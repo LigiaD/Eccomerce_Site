@@ -1,7 +1,14 @@
 import { combineReducers } from 'redux';
+import { reducer as form } from 'redux-form';
+import headerNavbar from './headernavbarreducer';
+import user from './userReducer';
+import shop from './shopReducer';
 
 const rootReducer = combineReducers({
-  state: (state = {}) => state
+  form,
+  headerNavbar,
+  user,
+  shop
 });
 
 export default rootReducer;
