@@ -7,13 +7,14 @@
     &__count,
     &__plus,
     &__minus {
-        border: 1px solid #E6E6E6;
+        border: 1px solid $plus-minus;
         display: grid;
         justify-items: center;
         align-items: center;
         height: 21px;
         width: 29px;
         grid-column: m/e;
+        color: $plus-minus;
     }
 
     &__count {

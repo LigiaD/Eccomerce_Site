@@ -1,7 +1,7 @@
 .underlined-title {
     font-size: 14px;
     font-weight: 600;   
-    border-bottom: 1px solid #CCC;
+    border-bottom: 1px solid $button-color;
 }
 
 .info-title {
@@ -17,7 +17,7 @@
     &__value {
         grid-column: m/e;
         grid-row: s/e;
-        color: #00CB79;
+        color: $button-color;
         font-weight: 600;
         font-size: 18px;
     }
@@ -27,7 +27,8 @@
     .info-title {
         &__title {
             font-weight: 600;
-            color: #00CB79;
+            font-size: 20px;
+            color: $button-color;
         }
     }
 }

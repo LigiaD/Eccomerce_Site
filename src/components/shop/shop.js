@@ -7,6 +7,8 @@ import ShopSearchBar from './shopSearchBar';
 import ShopProduct from './shopProducts';
 import ShopCart from './shopCart';
 import CartButton from './cartButton';
+import Layout from '../Layout';
+
 
 class Shop extends Component {
 
@@ -55,23 +57,26 @@ class Shop extends Component {
 
     render() {
         return (
-            <div className='shop'>
-                <ShopSearchBar onSubmit={this.onSubmit} className='shop__search-bar'/>
-                 <div className='shop__products'>
-            {
-                this.props.filteredProducts.map(product => {
-                    return (
-                       <ShopProduct {...product} key={product._id} />
-                    )
-                })
-            }
-        </div>
-                {
-                    this.state.showCart ? <ShopCart className='shop__cart'/> : ''
-                }
+            <Layout>
+                <div className='shop'>
+                    
+                        <ShopSearchBar onSubmit={this.onSubmit} className='shop__search-bar'/>
+                        <div className='shop__products'>
+                            {
+                                this.props.filteredProducts.map(product => {
+                                    return (
+                                    <ShopProduct {...product} key={product._id} />
+                                    )
+                                })
+                            }
+                        </div>
+                        {
+                            this.state.showCart ? <ShopCart className='shop__cart'/> : ''
+                        }
 
-                 <CartButton onClick={this.handleAddToCart} className='shop__cart-button' icon='fas fa-cart-plus'/>
-            </div>
+                        <CartButton onClick={this.handleAddToCart} className='shop__cart-button' icon='fas fa-cart-plus'/>
+                    </div>
+            </Layout>
         )
     }
 }

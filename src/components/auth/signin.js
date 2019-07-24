@@ -8,11 +8,11 @@ import * as actions from '../../actions';
 
 class SignIn extends Component {
 
-    componentDidMount() {
-        this.props.setHeaderLinks([]);
-        this.props.setNavBarLinks([]);
+    // componentDidMount() {
+    //     this.props.setHeaderLinks([]);
+    //     this.props.setNavBarLinks([]);
         
-    }
+    // }
 
     onSubmit = (fields) => {
         this.props.signIn(fields);
@@ -22,9 +22,14 @@ class SignIn extends Component {
 
     render() {
         return (
-            <div className='sign-in'>
-                <PageTitle className='sign-in__page-title' title='Login'/>
-                <SignInForm onSubmit={this.onSubmit} className='sign-in__form'/>
+            <div className='sign-in-layout'>
+                
+                    {/* <img src='photos/wheel.jpg'/> */}
+                
+                <div className='sign-in'>
+                    <PageTitle className='sign-in__page-title' title='Login'/>
+                    <SignInForm onSubmit={this.onSubmit} className='sign-in__form'/>
+                </div>
             </div>
         )
     }

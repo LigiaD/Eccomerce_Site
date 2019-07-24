@@ -3,6 +3,8 @@ import * as actions from '../../actions';
 import { connect } from 'react-redux';
 import AccountInformation from './accountInformation';
 import PurchaseHistory from './purchaseHistory';
+import AccountLayout from '../AccountLayout';
+
 
 class Account extends Component{
 
@@ -56,11 +58,17 @@ class Account extends Component{
 
     render() {
         return (
-            <div className='account'>
-                {
-                    this.renderContent()
-                }
-            </div>
+            <AccountLayout>
+                <div className='account'>
+                    {
+                                            
+                        this.renderContent()
+                    }
+                </div>
+            </AccountLayout>
+
+            
+         
         )
     }
 }

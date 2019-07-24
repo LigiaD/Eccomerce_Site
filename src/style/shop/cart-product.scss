@@ -9,6 +9,8 @@
     &__image {
         grid-row: s/e;
         grid-column: image-s/image-e;
+        width: 100%;
+
     }
     &__title {
         grid-row: s/m;
@@ -23,7 +25,7 @@
         grid-row: m/e;
         grid-column: quantity-s/quantity-e;
         .quantity__count {
-            color: white;
+            color: $navbar-hover;
         }
     }
     &__remove {
@@ -33,6 +35,7 @@
 
         font-size: 14px;
         text-decoration-line: underline;
+        color: $navbar-hover;
     }
     &__price {
         align-self: center;

@@ -23,7 +23,7 @@ class Details extends Component {
         const { className, title} = this.props;
         return (
             <div className={`${className} details`}>
-                <div className='details__title'>{title}</div>
+                {/* <div className='details__title'>{title}</div> */}
                 <div className='details__links'>
                     {
                         this.renderChildren()

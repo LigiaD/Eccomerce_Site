@@ -1,3 +1,16 @@
+
+$background-color: white;
+$navbar-color: #00004d;
+$navbar-hover: #e6e6ff;
+$flip-back:  #e6e6e6;
+$plus-minus: #4d4dff;
+$button-color: #009999;
+$text-color:#009999;
+$main-font: 'Alfa Slab One', cursive;
+
+
+
+
 html {
     font-size: 62.5%;
 }
@@ -14,8 +27,8 @@ h1 {
 }
 
 body {
-    font-family: "Open Sans";
-    color: #808080;
+    font-family: "Noto Sans", sans-serif;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -25,6 +38,8 @@ body {
 
 @import 'layout';
 @import 'headernavbar';
+@import 'account-layout';
+@import 'account-headernavbar';
 @import 'auth/signin';
 @import 'auth/signup';
 
@@ -51,6 +66,7 @@ body {
 @import 'information/payment';
 @import 'information/shipping';
 @import 'information/infoHelp';
+@import 'information/thanksMessage';
 
 
 

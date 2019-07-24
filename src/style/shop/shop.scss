@@ -3,10 +3,18 @@
     grid-column: s/e;
 
     display: grid;
-    grid-template-rows: 15px [search-bar-s] 38px [search-bar-e] 57px [products-s] 1fr [products-e]; 
+    grid-template-rows: [search-bar-s] 8px [search-bar-e] 7px [products-s] 1fr [products-e]; 
     grid-template-columns: [s] minmax(200px, 1035px) [e];
     justify-content: center;
-    grid-gap: 37px;
+    grid-gap: 17px;
+
+    // border-left: 5px solid black;
+    // border-right: 5px solid black;
+
+    // padding-left: 20px;
+    // padding-right: 34px;
+
+    
 
     &__search-bar {
         grid-row: search-bar-s/search-bar-e;

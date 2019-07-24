@@ -19,11 +19,11 @@ class ShopProduct extends Component {
 
 
     render() {
-        const {_id, title, description, price } = this.props;
+        const {_id, title, description, price, imageUrl } = this.props;
         return (
             <div key={_id} className='shop-product'>
                 <div className='shop-product__front'>
-                    <img className='shop-product__front__image' src='http://via.placeholder.com/220x220'/>
+                    <img className='shop-product__front__image' src={imageUrl}/>
                     <div className='shop-product__front__title'>{title}</div>
                 </div>
                 <div className='shop-product__back'>

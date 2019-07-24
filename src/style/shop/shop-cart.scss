@@ -1,5 +1,5 @@
 .shop-cart {
-
+    z-index: 10;
     transition: all .3s ease;
     display: grid;
     grid-template-rows: [tog-s] 40px [tog-e con-s] 1fr [con-e];
@@ -29,7 +29,7 @@
     &__content {
         height: 675px;
         width: 520px;
-        background-color: #333;
+        background-color: $navbar-color;
         box-shadow: -3px 20px 20px 0 rgba(0,0,0,0.2);
     }
 }
@@ -37,9 +37,9 @@
 .cart-button {
 
     transition: all .3s ease;
-    background-color: #333;
+    background-color: $navbar-color;
     
-    color: white;
+    color: $navbar-hover;
     font-size: 28px;
     border-radius: 25px 0 0 25px;
     height: 40px;
@@ -64,7 +64,7 @@
         font-weight: 600;
         font-size: 30px;
         font-family: 'Titillium Web';
-        color: #E6E6E6;
+        color: $navbar-hover;
 
        // margin-bottom: 50px;
     }
@@ -85,7 +85,7 @@
 .cart-footer {
 
     height: 113px;
-    background-color: #1A1A1A;
+    background-color: $navbar-color;
 
     display: grid;
     grid-template-rows: [s] 1fr [e];
@@ -107,9 +107,9 @@
             height: 38px;
             width: 183px;
             border-radius: 20px;
-            background-color: #00CB79;
+            background-color: $navbar-hover;
     
-            color: white;
+            color: $navbar-color;
             font-size: 1.6rem;
             font-weight: 600;
     
@@ -132,13 +132,14 @@
             justify-self: end;
             grid-column: sub-s/sub-e; 
             font-size: 18px;
+            color: $navbar-hover;
         }
     
         &__price {
             justify-self: start;
             grid-column: price-s/price-e; 
             font-size: 18px;
-            color: white;
+            color: $navbar-hover;
             font-weight: 600;
         }
 

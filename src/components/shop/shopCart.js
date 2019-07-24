@@ -26,6 +26,7 @@ function CartContent({className, products}) {
     )
 }
 
+
 function CartFooter({className, products}) {
     let subtotal = 0;
     products.map(cartProduct => {
